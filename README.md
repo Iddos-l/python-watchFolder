@@ -7,11 +7,11 @@ This script uses watchdog to catch events in a folder.
 It then calls ffmpeg  using a shell to convert the event source file to MP4 with custom arguments.
 
 
-Requirements:
-    python 3, or 2.7
-    watchdog
-    runs on Windows
+Requirements.
+- python 3, or 2.7
+- watchdog
+- runs on Windows
 
 
-Import watchdog:
-    pip3 install watchdog
+Import watchdog.
+- pip3 install watchdog
