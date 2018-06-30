@@ -15,3 +15,6 @@ Requirements.
 
 Import watchdog.
 - pip3 install watchdog
+
+Known bug.
+ - Fast read render will not work
