@@ -35,7 +35,7 @@ class MyHandler(PatternMatchingEventHandler):
 
         call(['set', 'PATH=C:\\Id_Convert\\engine\\bin;%PATH%', '&&',
              'ffmpeg', '-i', filePath, '-c:v', 'libx264',
-             '-pix_fmt', 'yuv420p', '-profile', 'high', '-crf', '16', '-y', outputPath], shell=True)
+             '-pix_fmt', 'yuv420p', '-profile', 'high', '-crf', '15', '-y', outputPath], shell=True)
 
     def on_created(self, event):
         """Waits for event to be ready (Not changing in size)
