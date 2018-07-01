@@ -8,7 +8,7 @@ It then calls ffmpeg  using a shell to convert the event source file to MP4 with
 
 
 Requirements.
-- python 3, or 2.7
+- python 3 / 2.7
 - watchdog
 - runs on Windows
 
