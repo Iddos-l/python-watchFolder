@@ -57,22 +57,22 @@ class MyHandler(PatternMatchingEventHandler):
             pass
 
 
+def main():
+    observer = Observer()
+    event_handler = MyHandler() # create event handler
+    # set observer to use created handler in directory
+    observer.schedule(event_handler, path = watchFolder)
+    observer.start()
 
-observer = Observer()
-event_handler = MyHandler() # create event handler
-# set observer to use created handler in directory
-observer.schedule(event_handler, path = watchFolder)
-observer.start()
+    # sleep until keyboard interrupt, then stop + rejoin the observer
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        observer.stop()
 
-# sleep until keyboard interrupt, then stop + rejoin the observer
-try:
-    while True:
-        time.sleep(1)
-except KeyboardInterrupt:
-    observer.stop()
-
-observer.join()
-exit(-1)
+    observer.join()
+    exit(-1)
 
 if __name__ == '__main__':
     main()
