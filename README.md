@@ -18,3 +18,4 @@ Import watchdog.
 
 Known bug.
  - Fast read render will not work
+ - Copy paste to folder wont work but cut paste will
